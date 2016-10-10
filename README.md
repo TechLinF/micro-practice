@@ -9,8 +9,9 @@ go-micro框架demo
 
 #### Run Consul
 
+```
 $ consul agent -dev -advertise=127.0.0.1
-
+```
 
 #### 运行服务
 
@@ -25,9 +26,9 @@ protoc --go_out=plugins=micro:. *.proto
 
 
 #### 测试
-
+```
 ➜  ~ micro web
-
+```
 在浏览器地址栏中输入:http://localhost:8082
 ![Alt text](1.png)
 
