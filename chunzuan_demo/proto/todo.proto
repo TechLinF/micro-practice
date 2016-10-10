@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package service.todo;
+
+service Todo{
+	rpc AddTask(AddTaskReq) returns(Null){}
+}
+
+message AddTaskReq{
+	string id=1;
+	string owner_id=2;
+	string title=3;
+	string description=4;
+}
+
+message Null {}
