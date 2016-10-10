@@ -13,19 +13,21 @@ go-micro框架demo
 $ consul agent -dev -advertise=127.0.0.1
 ```
 
-#### 运行服务
+#### Run Service
 
 在micro-practice/chunzuan_demo/proto目录下执行如下命令:
 
 前提需要安装protoc编译器:[https://blog.micro.mu/2016/03/28/go-micro.html](https://blog.micro.mu/2016/03/28/go-micro.html)
+```
 go get github.com/micro/protobuf/{proto,protoc-gen-go}
 protoc --go_out=plugins=micro:. *.proto
-
+```
 在micro-practice/chunzuan_demo目录下运行服务:
+```
 ➜  chunzuan_demo ./chunzuan_demo
+```
 
-
-#### 测试
+#### Test
 ```
 ➜  ~ micro web
 ```
